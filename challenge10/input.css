@@ -46,8 +46,8 @@ body {
 }
 
 .cardWrapper {
-	height: 100px;
-	width: 100px;
+	height: 20%;
+	width: 20%;
 	position: relative;
 	transform: rotateY(0deg);
 	transition: transform 0.5s ease-in;
@@ -58,8 +58,8 @@ body {
 }
 
 .card {
-	height: 90px;
-	width: 90px;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
