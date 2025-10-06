@@ -1,0 +1,106 @@
+@import "tailwindcss";
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #8f754f;
+	color: #f5f0f6;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	border: 1px solid white;
+	margin: auto;
+	margin-top: 50px;
+	gap: 20px;
+	padding: 20px;
+}
+
+.hea {
+	display: flex;
+	justify-content: center;
+	font-size: large;
+	font-weight: 700;
+}
+
+.info {
+	display: flex;
+	justify-content: center;
+}
+.info div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.gameContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.cardWrapper {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	transform: rotateY(0deg);
+	transition: transform 0.5s ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+}
+
+.card {
+	height: 90px;
+	width: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	border: 2px solid #f5f0f6;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+.emoji {
+	background-color: #8f754f;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.question {
+	background-color: #1098f7;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+
+.active {
+	transform: rotateY(180deg);
+}
+
+button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 3px;
+	padding: 12px 16px;
+	border: 0;
+	color: #f5f0f6;
+	background: #59344f;
+	line-height: 1;
+	font-size: 14px;
+}
+
+button:hover {
+	transition: all 0.1s ease;
+	box-shadow: 0 0 0 0 #fff, 0 0 0 3px #093824;
+}
