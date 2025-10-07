@@ -192,7 +192,7 @@ body {
 .cont {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   border: 1px solid white;
   margin: auto;
   margin-top: 50px;
@@ -271,4 +271,14 @@ button {
 button:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #093824;
+}
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .cardWrapper {
+    height: 70px;
+    width: 70px;
+  }
+  .card {
+    height: 68px;
+    width: 68px;
+  }
 }
